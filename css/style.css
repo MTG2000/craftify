@@ -433,10 +433,10 @@ height: 700px; }
     padding: 0;
     box-shadow: -4px 4px 20px 3px #444; }
 .container .files .file {
-    width: 20px;
+    /* width: 20px; */
+    
     height: 100%;
     flex: 1;
-
     transition: flex 0.4s; }
 .container .files .file svg {
     display: block;
@@ -519,7 +519,7 @@ color: #FFF; }
 .contact-us .bg img {
     z-index: 3; 
     object-fit: cover;
-    animation: move-bg 5s linear infinite alternate ;
+    animation: move-bg 9s linear infinite alternate ;
 }
 
 @keyframes move-bg{
