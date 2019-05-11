@@ -31,9 +31,20 @@ body{
 }
 
 .section-title{
-    min-width: 300px;
+    min-width: 330px;
     width: 25%;
+    margin-top: 3rem;
+    font-size: 130%;
+    height: 70px;
+    white-space: nowrap;
+    line-height: 35px;
     position: relative;
+    text-shadow: 1px 1px 5px #EEE;
+}
+@media (min-width:992px){
+    .section-title{
+        font-size: 170%;
+    }
 }
 
 .section-title::before{
@@ -409,7 +420,11 @@ height: 700px; }
     opacity: 1; }
 @media screen and (min-width: 1120px) {
 .container .files {
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display:flex; 
     justify-content: center;
     flex-direction: row-reverse;
     width: 90%;
@@ -421,6 +436,7 @@ height: 700px; }
     width: 20px;
     height: 100%;
     flex: 1;
+
     transition: flex 0.4s; }
 .container .files .file svg {
     display: block;
