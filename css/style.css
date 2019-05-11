@@ -29,6 +29,7 @@ body{
     line-height: 35px;
     position: relative;
     text-shadow: 1px 1px 5px #EEE;
+    filter: drop-shadow(3px 3px 10px #111);
 }
 @media (min-width:992px){
     .section-title{
@@ -469,6 +470,7 @@ red:#f03e3e;
 blue: #155592
 */
 .contact-us {
+border-top: 10px solid #111;
 overflow: hidden;
 padding: 100px 0;
 position: relative;
@@ -514,8 +516,15 @@ color: #FFF; }
 }
 .contact-us .bg img {
     z-index: 3; 
+    width: 100%;
     object-fit: cover;
-    animation: move-bg 9s linear infinite alternate ;
+    animation: move-bg 200s linear infinite alternate ;
+}
+
+@media (min-width:900px){
+    .contact-us .bg img {
+        animation: move-bg 19s linear infinite alternate ;
+    }
 }
 
 @keyframes move-bg{
