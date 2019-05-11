@@ -1,14 +1,3 @@
-/* 
-    blue : #208bc9
-    white : #fff
-    gray : #ddd
-    red : #f03e3e
-    green : #20c997
-    yello : #f06595
-    black : #333
-    
-*/
-
 body{
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -195,8 +184,7 @@ header.bg-dark{
 /* start header slider */
 
 .header-slider {
-    min-height:650px;
-    margin-bottom: 200px;
+    height:650px;
 }
 .header-slider .container-fluid{
     position: absolute;
@@ -206,8 +194,7 @@ header.bg-dark{
     padding: 0;
 }
 .header-slider .container-fluid .carousel-inner{
-    height: 108vh;
-    /* height: 600px;; */
+    height: 650px;
 }
 
 .header-slider .container-fluid .carousel-inner .carousel-item:first-of-type{
@@ -242,9 +229,14 @@ header.bg-dark{
 .header-slider .container-fluid .overlay #header-mask{
     width:102%;
     position:absolute;
-    bottom:-30px;
+    bottom:-90px;
     right:0;
     left:0;
+}
+@media (max-width:768px){
+	.header-slider .container-fluid .overlay #header-mask{
+		bottom:30px;
+	}
 }
 #header-mask rect{
     fill:transparent;
@@ -454,10 +446,11 @@ height: 700px; }
     right: -194px;
     z-index: 10;
     left: unset;
-    transform: translate(0 ,-50%); }
+	transform: rotate(90deg);}
+/*    transform: translate(0 ,-50%); }*/
 .container .files .file .title h3 {
     color: #FFF;
-    transform: rotate(90deg);
+	transform: translate(-7%,0);
     white-space: nowrap;
     font-size: 16px; }
 .container .files .file .title h3:hover {
