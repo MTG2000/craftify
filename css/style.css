@@ -237,7 +237,7 @@ header.bg-dark{
 }
 @media (max-width:768px){
 	.header-slider .container-fluid .overlay #header-mask{
-		bottom:30px;
+		bottom:0px;
 	}
 }
 #header-mask rect{
@@ -487,11 +487,16 @@ color: #FFF; }
     z-index: 200;
     font-size: 30px;
     box-shadow: 0 0 20px 3px #222;
-    transition: transform 0.6s, background-color 0.6s; }
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+ }
 .contact-us > a:hover {
     text-decoration: none;
     transform: rotate(-33deg);
-    background-color: #f02c2c !important; }
+    background-color: #f02c2c !important;
+ }
 .contact-us svg {
     position: absolute;
     bottom: 99%;
